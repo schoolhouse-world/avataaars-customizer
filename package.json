@@ -17,8 +17,8 @@
   },
   "scripts": {
     "build": "rollup -c",
-    "start": "rollup -c -w",
-    "prepare": "yarn build"
+    "watch": "rollup -c -w",
+    "prepare": "rollup -c"
   },
   "peerDependencies": {
     "@schoolhouse/avatars": "*",
