@@ -1,23 +1,25 @@
-# avataaars-customizer
+# avatars-customizer
 
-Embeddable custom avatar generator based on https://avataaars.com/ and https://getavataaars.com/.
+Embeddable custom avatar generator
 
-![Screenshot](avataaars-customizer.png)
+![Screenshot](avatars-customizer.png)
 
 ## Install
 
 ```bash
-npm install --save avataaars-customizer
+npm install @schoolhouse/avatars-customizer
+# OR
+yarn add @schoolhouse/avatars-customizer
 ```
 
-React, react-dom, avataaars, and lodash are peer dependencies.
+React, react-dom, avatars, and lodash are peer dependencies.
 
 ## Usage
 
 ```jsx
 import React from 'react'
 
-import AvataaarsCustomerizer from 'avataaars-customizer'
+import AvatarsCustomerizer from '@schoolhouse/avatars-customizer'
 
 function Example() {
   const [customizedAttributes,setCustomizedAttributes] = React.useState({
@@ -34,7 +36,7 @@ function Example() {
   });
 
   return (
-    <AvataaarsCustomizer value={customizedAttributes} onChange={setCustomizedAttributes}/>
+    <AvatarsCustomizer value={customizedAttributes} onChange={setCustomizedAttributes}/>
   )
 }
 ```

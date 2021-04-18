@@ -1,10 +1,13 @@
 {
-  "name": "avataaars-customizer",
-  "version": "1.1.2",
-  "description": "",
+  "name": "@schoolhouse/avatars-customizer",
+  "version": "0.0.0",
+  "description": "Customizer for React Avatars",
   "author": "cgross",
+  "contributors": [
+    "Anees I <i@steelbrain.me>"
+  ],
   "license": "MIT",
-  "repository": "cgross/avataaars-customizer",
+  "repository": "git@github.com:schoolhouse-world/avatars-customizer.git",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "jsnext:main": "dist/index.es.js",
@@ -13,19 +16,15 @@
     "npm": ">=5"
   },
   "scripts": {
-    "test": "cross-env CI=1 react-scripts test --env=jsdom",
-    "test:watch": "react-scripts test --env=jsdom",
     "build": "rollup -c",
     "start": "rollup -c -w",
-    "prepare": "npm run build",
-    "predeploy": "cd example && npm install && npm run build",
-    "deploy": "gh-pages -d example/build"
+    "prepare": "yarn build"
   },
   "peerDependencies": {
-    "react": "^15.0.0 || ^16.0.0",
-    "react-dom": "^15.0.0 || ^16.0.0",
-    "avataaars": "^1.2.1",
-    "lodash": "^4.17.15"
+    "@schoolhouse/avatars": "*",
+    "lodash": ">=4",
+    "react": ">=17",
+    "react-dom": ">=17"
   },
   "devDependencies": {
     "@svgr/rollup": "^2.4.1",
@@ -45,8 +44,8 @@
     "eslint-plugin-react": "^7.10.0",
     "eslint-plugin-standard": "^3.1.0",
     "gh-pages": "^1.2.0",
+    "prettier": "^2.2.1",
     "react-dom": "^16.4.1",
-    "react-scripts": "^1.1.4",
     "rollup": "^0.64.1",
     "rollup-plugin-babel": "^3.0.7",
     "rollup-plugin-commonjs": "^9.1.3",

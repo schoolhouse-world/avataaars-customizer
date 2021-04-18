@@ -27,11 +27,11 @@
   padding: 4px;
   border-radius: 4px;
   cursor: pointer;
-  color:#007bff;
+  color:#223265;
 }
 
 .selectedTab {
-  background: #007bff;
+  background: #223265;
   color: white;
 }
 
