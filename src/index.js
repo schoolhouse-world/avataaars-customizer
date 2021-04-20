@@ -48,7 +48,7 @@ export default function AvatarsCustomizer(props) {
                 if (option.transform) {
                   attr.style = { transform: option.transform }
                 }
-                if (option.type === 'clothe') {
+                if (option.type === 'clothe' && attr[option.colorAttribute] == null) {
                   attr[option.colorAttribute] = 'Black'
                 }
                 return (
